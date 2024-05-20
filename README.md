@@ -13,17 +13,17 @@ pip install sentrifyai
 ## Usage
 
 ```
-from sentrifyai import SentrifyAI
+from sentrifyai import api
 
 # Initialize the client
-client = SentrifyAI()
+client = api.SentrifyAI()
 
 # List models available on SentrifyAI
 models = client.list_models()
 print(models)
 
 # Classify a message using a specific model
-result = client.classify_message(model_slug='model_slug', message='Your message here')
+result = client.classify_message(model_slug='Sentrify-Mod-1.1', message='Your message here')
 print(result)
 ```
 
