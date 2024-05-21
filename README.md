@@ -18,7 +18,7 @@ import json
 
 emotions = api.Emotions()
 
-results = emotions.emotion(model_slug='Emotions-1.0', message='This is a sample message.')
+results = emotions.emotion(model_slug='Emotion-1.0', message='This is a sample message.')
 
 json_results = json.dumps(results, indent=4)
 
