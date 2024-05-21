@@ -1,5 +1,6 @@
 LICENSE
 README.md
+pyproject.toml
 setup.py
 sentrifyai/__init__.py
 sentrifyai/api.py

@@ -14,17 +14,15 @@ pip install sentrifyai
 
 ```
 from sentrifyai import api
+import json
 
-# Initialize the client
-client = api.SentrifyAI()
+emotions = api.Emotions()
 
-# List models available on SentrifyAI
-models = client.list_models()
-print(models)
+results = emotions.emotion(model_slug='Emotions-1.0', message='This is a sample message.')
 
-# Classify a message using a specific model
-result = client.classify_message(model_slug='Sentrify-Mod-1.1', message='Your message here')
-print(result)
+json_results = json.dumps(results, indent=4)
+
+print(json_results)
 ```
 
 ## Documentation
